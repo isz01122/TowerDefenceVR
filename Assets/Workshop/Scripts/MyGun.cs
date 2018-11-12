@@ -60,7 +60,7 @@ public class MyGun : MonoBehaviour
         RaycastHit hitInfo;
 
         //만약 맞았다면
-        if (Physics.Raycast(ray, out hitInfo, 1000f))
+        if (Physics.Raycast(ray, out hitInfo, 1500f))
         {
             //1.맞은놈이 GameOver이면 3초동안 시간 누적 후에 신을 리로드한다
             if (hitInfo.transform.tag == "GameOver")
@@ -86,7 +86,7 @@ public class MyGun : MonoBehaviour
         RaycastHit hitInfo;
 
         //만약 맞았다면
-        if (Physics.Raycast(ray, out hitInfo, 1000f))
+        if (Physics.Raycast(ray, out hitInfo, 2000f))
         {
 
             //게임오버이면 아무작업을 하지 않기위해 방어코드 작성
